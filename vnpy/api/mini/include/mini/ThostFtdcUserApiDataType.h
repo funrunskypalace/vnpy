@@ -216,11 +216,11 @@ typedef char TThostFtdcIdentifiedCardNoType[51];
 ///士兵证
 #define THOST_FTDC_ICT_SoldierIDCard '4'
 ///户口簿
-#define THOST_FTDC_ICT_HouseholdRegister  '5'
+#define THOST_FTDC_ICT_HouseholdRegister '5'
 ///护照
 #define THOST_FTDC_ICT_Passport '6'
 ///台胞证
-#define THOST_FTDC_ICT_TaiwanCompatriotIDCard  '7'
+#define THOST_FTDC_ICT_TaiwanCompatriotIDCard '7'
 ///回乡证
 #define THOST_FTDC_ICT_HomeComingCard '8'
 ///营业执照号
@@ -228,7 +228,7 @@ typedef char TThostFtdcIdentifiedCardNoType[51];
 ///税务登记号/当地纳税ID
 #define THOST_FTDC_ICT_TaxNo 'A'
 ///港澳居民来往内地通行证
-#define THOST_FTDC_ICT_HMMainlandTravelPermit  'B'
+#define THOST_FTDC_ICT_HMMainlandTravelPermit 'B'
 ///台湾居民来往大陆通行证
 #define THOST_FTDC_ICT_TwMainlandTravelPermit 'C'
 ///驾照
@@ -238,7 +238,7 @@ typedef char TThostFtdcIdentifiedCardNoType[51];
 ///当地身份证
 #define THOST_FTDC_ICT_LocalID 'G'
 ///商业登记证
-#define THOST_FTDC_ICT_BusinessRegistration  'H'
+#define THOST_FTDC_ICT_BusinessRegistration 'H'
 ///港澳永久性居民身份证
 #define THOST_FTDC_ICT_HKMCIDCard 'I'
 ///人行开户许可证
@@ -1977,11 +1977,6 @@ typedef char TThostFtdcCommentType[31];
 typedef char TThostFtdcVersionType[4];
 
 /////////////////////////////////////////////////////////////////////////
-/////UtpCipherVersionType是一个版本信息类型
-///////////////////////////////////////////////////////////////////////////
-typedef char UtpCipherVersionType[65];
-
-/////////////////////////////////////////////////////////////////////////
 ///TFtdcTradeCodeType是一个交易代码类型
 /////////////////////////////////////////////////////////////////////////
 typedef char TThostFtdcTradeCodeType[7];
@@ -3117,7 +3112,7 @@ typedef double TThostFtdcTotalAmtType;
 ///回乡证
 #define THOST_FTDC_CFT_HomeComingCard '4'
 ///户口簿
-#define THOST_FTDC_CFT_HouseholdRegister  '5'
+#define THOST_FTDC_CFT_HouseholdRegister '5'
 ///营业执照号
 #define THOST_FTDC_CFT_LicenseNo '6'
 ///组织机构代码证
@@ -6415,11 +6410,11 @@ typedef char TThostFtdcClientSystemInfoType[273];
 /////////////////////////////////////////////////////////////////////////
 ///TThostFtdcAppIDType是App代码类型
 /////////////////////////////////////////////////////////////////////////
-typedef char  TThostFtdcClientAppIDType[33];
+typedef char TThostFtdcClientAppIDType[33];
 
 /////////////////////////////////////////////////////////////////////////
 ///TThostFtdcAutoCodeType是AutoCode代码类型
 /////////////////////////////////////////////////////////////////////////
-typedef char  TThostFtdcAutoCodeType[17];
+typedef char TThostFtdcAutoCodeType[17];
 
 #endif

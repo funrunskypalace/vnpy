@@ -112,8 +112,8 @@ struct CThostFtdcReqAuthenticateField
 	TThostFtdcProductInfoType	UserProductInfo;
 	///认证码
 	TThostFtdcAuthCodeType	AuthCode;
-	// App代码
-	TThostFtdcClientAppIDType AppID;
+	///App代码
+	TThostFtdcClientAppIDType	AppID;
 };
 
 ///客户端认证响应
@@ -125,8 +125,8 @@ struct CThostFtdcRspAuthenticateField
 	TThostFtdcUserIDType	UserID;
 	///用户端产品信息
 	TThostFtdcProductInfoType	UserProductInfo;
-	// App代码
-	TThostFtdcClientAppIDType AppID;
+	///App代码
+	TThostFtdcClientAppIDType	AppID;
 };
 
 ///客户端认证信息
@@ -139,15 +139,13 @@ struct CThostFtdcAuthenticationInfoField
 	///用户端产品信息
 	TThostFtdcProductInfoType	UserProductInfo;
 	///时间戳
-	TThostFtdcAuthInfoType TimeStamp;
+	TThostFtdcAuthInfoType	TimeStamp;
 	///认证信息
 	TThostFtdcAuthInfoType	AuthInfo;
 	///是否为认证结果
 	TThostFtdcBoolType	IsResult;
-	// App代码
-	TThostFtdcClientAppIDType AppID;
-	// 版本信息
-    UtpCipherVersionType    VerInfo;
+	///App代码
+	TThostFtdcClientAppIDType	AppID;
 };
 
 ///银期转帐报文头
@@ -666,6 +664,8 @@ struct CThostFtdcTradingAccountField
 	TThostFtdcMoneyType	SpecProductPositionProfitByAlg;
 	///特殊产品交易所保证金
 	TThostFtdcMoneyType	SpecProductExchangeMargin;
+	///分仓冻结资金
+	TThostFtdcMoneyType	FrozenPartition;
 };
 
 ///投资者持仓
@@ -1928,9 +1928,9 @@ struct CThostFtdcTransFundField
 	///投资者帐号
 	TThostFtdcAccountIDType	AccountID;
 	///出金的核心地址
-	TThostFtdcAddressAndPortType DepositKernel;
+	TThostFtdcAddressAndPortType	DepositKernel;
 	///入金的核心地址
-	TThostFtdcAddressAndPortType IncomingKernel;
+	TThostFtdcAddressAndPortType	IncomingKernel;
 	///币种代码
 	TThostFtdcCurrencyIDType	CurrencyID;
 	///转账金额
@@ -4704,7 +4704,7 @@ struct CThostFtdcInstrumentOrderCommRateField
 	TThostFtdcRatioType	OrderActionCommByVolume;
 };
 
-///报单手续费率查询
+///申报费率查询
 struct CThostFtdcQryInstrumentOrderCommRateField
 {
 	///经纪公司代码
@@ -4713,6 +4713,8 @@ struct CThostFtdcQryInstrumentOrderCommRateField
 	TThostFtdcInvestorIDType	InvestorID;
 	///合约代码
 	TThostFtdcInstrumentIDType	InstrumentID;
+	///投机套保标志
+	TThostFtdcHedgeFlagType	HedgeFlag;
 };
 
 ///市场行情
